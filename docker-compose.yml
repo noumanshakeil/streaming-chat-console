@@ -1,10 +1,14 @@
 services:
-  web:
+  api:
     build: .
+    container_name: streaming-chat-console-api
     ports:
       - "8000:8000"
     environment:
-      LLM_MODE: mock
       APP_NAME: streaming-chat-console
+      LLM_MODE: mock
+      DATABASE_URL: sqlite+aiosqlite:///./data/app.db
+      LOG_LEVEL: INFO
     volumes:
       - ./data:/app/data
+    restart: unless-stopped

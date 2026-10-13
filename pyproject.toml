@@ -1,0 +1,13 @@
+[project]
+name = "streaming-chat-console"
+version = "2.0.0"
+description = "Token-streaming chat console with durable sessions, system prompts, message history, and SSE-style streaming — mock/OpenAI/Ollama providers behind one service boundary."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
