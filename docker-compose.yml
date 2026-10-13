@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      LLM_MODE: mock
+      APP_NAME: streaming-chat-console
+    volumes:
+      - ./data:/app/data

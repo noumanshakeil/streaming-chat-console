@@ -1,0 +1,11 @@
+{
+  "project": "streaming-chat-console",
+  "resource": "sessions",
+  "samples": [
+    {
+      "id": "ss1",
+      "title": "General",
+      "system_prompt": "Be concise"
+    }
+  ]
+}
